@@ -1,5 +1,5 @@
 # *To Franch or Not to Franch?* Exploring Sales in Franchised vs Non-Franchised Restaurants
-### An inferential study on the yearly sales of restaurants based on their franchising status
+### An inferential study on the yearly sales of restaurants based on their franchising status.
 
 <details>
   <summary>Table of Contents</summary>
