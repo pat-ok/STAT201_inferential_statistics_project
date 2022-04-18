@@ -178,11 +178,13 @@ estimates
 
  ## Hypothesis Testing
   
-In order to determine whether the observed difference in mean sales is indeed statistically significant, hypothesis tests can be conducted using both traditional and simulation based methods, with a chosen significance level of $\alpha = 0.05$. The null hypothesis is that there is no difference between sales of fast-growing franchised and non-franchised restaurants in America. The alternative hypothesis is that fast-growing franchised restaurants have higher sales than non-franchised restaurants, thus being a one sided alternative hypothesis. In other words:
-- $H_0: μ_f - μ_{nf} = 0$
-- $H_A: μ_f - μ_{nf} > 0$  
+In order to determine whether the observed difference in mean sales is indeed statistically significant, hypothesis tests can be conducted using both traditional and simulation based methods, with a chosen significance level of ![equation](http://latex.codecogs.com/gif.latex?%5Cbg_white%5CLARGE%20%5Cdpi%7B110%7D%5Calpha%20=%200.05)
+. The null hypothesis is that there is no difference between sales of fast-growing franchised and non-franchised restaurants in America. The alternative hypothesis is that fast-growing franchised restaurants have higher sales than non-franchised restaurants, thus being a one sided alternative hypothesis. In other words:
+- ![equation](http://latex.codecogs.com/gif.latex?%5Cbg_white%5CLARGE%20%5Cdpi%7B110%7DH_0:%20%5Cmu_f%20-%20%5Cmu_%7Bnf%7D%20=%200)  
+- ![equation](http://latex.codecogs.com/gif.latex?%5Cbg_white%5CLARGE%20%5Cdpi%7B110%7DH_A:%20%5Cmu_f%20-%20%5Cmu_%7Bnf%7D%20%3E%200)
 
-Where $μ_f$ represents the mean sales of fast-growing franchised restaurants in America, and $μ_{nf}$ represents the mean sales of fast-growing non-franchised restaurants in America.
+	
+Where ![equation](http://latex.codecogs.com/gif.latex?%5Cbg_white%5CLARGE%20%5Cdpi%7B110%7D%5Cmu_f) represents the mean sales of fast-growing franchised restaurants in America, and ![equation](http://latex.codecogs.com/gif.latex?%5Cbg_white%5CLARGE%20%5Cdpi%7B110%7D%5Cmu_%7Bnf%7D) represents the mean sales of fast-growing non-franchised restaurants in America.
 
 ### Traditional Two Sample T-Test
 
@@ -240,7 +242,7 @@ The Welch's two sample t-test has given the following output:
 - test statistic = 0.041239
 - p-value = 0.4836
 
-The p-value represents the probability of obtaining a result that is at least as extreme as the observed difference, under the assumption of the null hypothesis. Since the p-value is greater than the chosen significance level of $\alpha = 0.05$, we fail to reject the null hypothesis, as the test is statistically insignificant at the chosen alpha level. Thus, based on this test, the difference between franchised and non-franchised restaurant sales is not significantly greater than 0.
+The p-value represents the probability of obtaining a result that is at least as extreme as the observed difference, under the assumption of the null hypothesis. Since the p-value is greater than the chosen significance level of ![equation](http://latex.codecogs.com/gif.latex?%5Cbg_white%5CLARGE%20%5Cdpi%7B110%7D%5Calpha%20=%200.05) , we fail to reject the null hypothesis, as the test is statistically insignificant at the chosen alpha level. Thus, based on this test, the difference between franchised and non-franchised restaurant sales is not significantly greater than 0.
 
 ### Simulation Based Hypothesis Test
 
@@ -316,7 +318,7 @@ paste("p-value:", pval)
 
 Figure 3.2: Simulation Based Null Distribution with Observed Test Statistic of t = 0.113. The p-value associated with the observed test statistic is 0.488.  
 
-The shaded region of the simulated null distribution represents the probability associated with observing a difference in mean sales (in million USD) as extreme or more extreme than the observed test statistic of 0.113. This region is relatively large, and is confirmed by the p-value of 0.488. This means that the chance to observe a difference at least as extreme as the test statistic *purely due to random sampling variation* is 48.8%. Since the p-value is greater than the chosen significance level of $\alpha = 0.05$, we fail to reject the null hypothesis, as the test is statistically insignificant at the chosen alpha level. Thus, based on this test, the difference between franchised and non-franchised restaurant sales is not significantly greater than 0.
+The shaded region of the simulated null distribution represents the probability associated with observing a difference in mean sales (in million USD) as extreme or more extreme than the observed test statistic of 0.113. This region is relatively large, and is confirmed by the p-value of 0.488. This means that the chance to observe a difference at least as extreme as the test statistic *purely due to random sampling variation* is 48.8%. Since the p-value is greater than the chosen significance level of ![equation](http://latex.codecogs.com/gif.latex?%5Cbg_white%5CLARGE%20%5Cdpi%7B110%7D%5Calpha%20=%200.05) , we fail to reject the null hypothesis, as the test is statistically insignificant at the chosen alpha level. Thus, based on this test, the difference between franchised and non-franchised restaurant sales is not significantly greater than 0.
 
 ## Confidence Interval
 
@@ -364,7 +366,7 @@ paste("p-value:", pval)
 
 Figure 4: Simulation Based Bootstrap Distribution with 95% Confidence Interval. The shaded confidence interval is (-5.120, 5.417). This confidence intervals provides a possible range of values (in million USD) for the difference in the mean sales between franchised and non-franchised restaurants.
 
-This indicates that if 100 samples of n = 50 restaurants were gathered and a confidence interval was constructed for each of those 100 samples, then it is expected that 95 of those confidence intervals will capture the true value of $μ_f - μ_{nf}$. In other words, we are 95% confident that the true difference between the parameters $μ_f - μ_{nf}$ is between (-5.120, 5.417). However, it is important to note that this interval in fact contains the value 0, which would suggest that there is no difference in mean sales between franchised and non-franchised restaurants. As a result, it cannot be conclusively stated that franchised restaurants have higher mean sales, or that either restaurant type have higher mean sales.
+This indicates that if 100 samples of n = 50 restaurants were gathered and a confidence interval was constructed for each of those 100 samples, then it is expected that 95 of those confidence intervals will capture the true value of ![equation](http://latex.codecogs.com/gif.latex?%5Cbg_white%5CLARGE%20%5Cdpi%7B110%7D%5Cmu_f%20-%20%5Cmu_%7Bnf%7D) . In other words, we are 95% confident that the true difference between the parameters ![equation](http://latex.codecogs.com/gif.latex?%5Cbg_white%5CLARGE%20%5Cdpi%7B110%7D%5Cmu_f%20-%20%5Cmu_%7Bnf%7D) is between (-5.120, 5.417). However, it is important to note that this interval in fact contains the value 0, which would suggest that there is no difference in mean sales between franchised and non-franchised restaurants. As a result, it cannot be conclusively stated that franchised restaurants have higher mean sales, or that either restaurant type have higher mean sales.
 
 ## Discussion
 
